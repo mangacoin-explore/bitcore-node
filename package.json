@@ -1,13 +1,13 @@
 {
-  "name": "bitcore-node",
+  "name": "monacore-node",
   "description": "Full node with extended capabilities using Bitcore and Bitcoin Core",
   "author": "BitPay <dev@bitpay.com>",
   "version": "3.1.3",
   "main": "./index.js",
-  "repository": "git://github.com/bitpay/bitcore-node.git",
+  "repository": "git://github.com/monaco-ex/bitcore-node.git",
   "homepage": "https://github.com/bitpay/bitcore-node",
   "bugs": {
-    "url": "https://github.com/bitpay/bitcore-node/issues"
+    "url": "https://github.com/monaco-ex/bitcore-node/issues"
   },
   "contributors": [
     {
@@ -24,15 +24,19 @@
     {
       "name": "Patrick Nagurny",
       "email": "patrick@bitpay.com"
+    },
+    {
+      "name": "Cryptcoin Junkey",
+      "email": "cryptcoin.junkey@gmail.com"
     }
   ],
   "bin": {
     "bitcore-node": "./bin/bitcore-node",
-    "bitcoind": "./bin/bitcoind"
+    "bitcoind": "./bin/monacoind"
   },
   "scripts": {
     "preinstall": "./scripts/download",
-    "verify": "./scripts/download --skip-bitcoin-download --verify-bitcoin-download",
+    "verify": "./scripts/download --skip-monacoin-download --verify-monacoin-download",
     "test": "mocha -R spec --recursive",
     "regtest": "./scripts/regtest",
     "jshint": "jshint --reporter=node_modules/jshint-stylish ./lib",
@@ -40,8 +44,8 @@
     "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "tags": [
-    "bitcoin",
-    "bitcoind"
+    "monacoin",
+    "monacoind"
   ],
   "dependencies": {
     "async": "^1.3.0",
