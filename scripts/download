@@ -7,7 +7,7 @@ platform=`uname -a | awk '{print tolower($1)}'`
 arch=`uname -m`
 version="0.13.2"
 url="https://github.com/monaparty/monacoin/releases/download"
-tag="v0.13.2-monacore-1"
+tag="v0.13.2-monacore-2"
 
 if [ "${platform}" == "linux" ]; then
     if [ "${arch}" == "x86_64" ]; then
