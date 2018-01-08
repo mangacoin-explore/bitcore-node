@@ -48,7 +48,7 @@
     "monacoind"
   ],
   "dependencies": {
-    "coininfo": "^2.0.0",
+    "@cryptcoin-junkey/coininfo": "^1.0.1-monacoex-1",
     "@monaco-ex/bitcore-lib": "^0.14.0-segwit-1",
     "async": "^1.3.0",
     "bitcoind-rpc": "^0.6.0",
