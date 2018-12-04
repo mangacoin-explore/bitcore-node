@@ -1,5 +1,5 @@
 {
-  "name": "monacore-node",
+  "name": "mangacore-node",
   "description": "Full node with extended capabilities using Bitcore and Bitcoin Core",
   "author": "BitPay <dev@bitpay.com>",
   "version": "3.1.3-pre-7",
@@ -31,8 +31,8 @@
     }
   ],
   "bin": {
-    "monacore-node": "./bin/monacore-node",
-    "monacoind": "./bin/monacoind"
+    "mangacore-node": "./bin/monacore-node",
+    "mangacoind": "./bin/mangacoind"
   },
   "scripts": {
     "preinstall": "./scripts/download",
@@ -49,7 +49,7 @@
   ],
   "dependencies": {
     "coininfo": "^2.0.0",
-    "@monaco-ex/bitcore-lib": "^0.14.0-segwit-1",
+    "@monaco-ex/bitcore-lib": "git+https://github.com/mangacoin-explore/bitcore-lib#master-monacoin",
     "async": "^1.3.0",
     "bitcoind-rpc": "^0.6.0",
     "body-parser": "^1.13.3",
